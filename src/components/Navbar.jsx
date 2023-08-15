@@ -12,8 +12,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  height: 100%;
   justify-content: flex-end;
+  height: 100%;
   padding: 0px 20px;
   position: relative;
 `;
@@ -21,8 +21,8 @@ const Wrapper = styled.div`
 const Search = styled.div`
   width: 40%;
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 0px;
+  right: 0px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -35,8 +35,8 @@ const Search = styled.div`
 const Input = styled.input`
   border: none;
   background-color: transparent;
-  width: 100%;
   outline: none;
+  color: ${({ theme }) => theme.text};
 `;
 
 const Button = styled.button`
@@ -47,7 +47,6 @@ const Button = styled.button`
   border-radius: 3px;
   font-weight: 500;
   cursor: pointer;
-  /* margin-top: 10px; */
   display: flex;
   align-items: center;
   gap: 5px;
