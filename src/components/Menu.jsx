@@ -19,6 +19,7 @@ import {
   SubscriptionsOutlined,
   VideoLibraryOutlined,
 } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   flex: 1;
@@ -88,10 +89,12 @@ export const Menu = ({ setDarkMode, darkMode }) => {
   return (
     <Container>
       <Wrapper>
-        <Logo>
-          <Img src={logo} />
-          JollyRoger
-        </Logo>
+        <Link to={"/"} style={{ textDecoration: "none", color: "inherit" }}>
+          <Logo>
+            <Img src={logo} />
+            JollyRoger
+          </Logo>
+        </Link>
         <Item>
           <Home />
           Home
@@ -162,7 +165,7 @@ export const Menu = ({ setDarkMode, darkMode }) => {
         </Item>
         <Item onClick={() => setDarkMode(!darkMode)}>
           <SettingsBrightnessOutlined />
-          Light Mode
+          {darkMode ? "Light" : "Dark"} Mode
         </Item>
       </Wrapper>
     </Container>
