@@ -96,7 +96,7 @@ export const Menu = ({ setDarkMode, darkMode }) => {
         <Link to={"/"} style={{ textDecoration: "none", color: "inherit" }}>
           <Logo>
             <Img src={logo} />
-            JollyRoger
+            Youtube
           </Logo>
         </Link>
         <Item>

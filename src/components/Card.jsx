@@ -57,16 +57,16 @@ export const Card = ({ type }) => {
       <Container type={type}>
         <Image
           type={type}
-          src="https://pbs.twimg.com/profile_images/1283759937177317376/iKqA9lOB_400x400.jpg"
+          src="https://cdn.pixabay.com/photo/2015/03/10/17/23/youtube-667451_640.png"
         />
         <Details type={type}>
           <ChannelImage
             type={type}
-            src="https://pbs.twimg.com/profile_images/1283759937177317376/iKqA9lOB_400x400.jpg"
+            src="https://cdn.pixabay.com/photo/2015/03/10/17/23/youtube-667451_640.png"
           />
           <Texts>
             <Title>Test Video</Title>
-            <ChannelName>Jolly Roger</ChannelName>
+            <ChannelName>Channel Name</ChannelName>
             <Info>660,908 views • 1 day ago</Info>
           </Texts>
         </Details>
